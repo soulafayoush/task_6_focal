@@ -1,0 +1,548 @@
+{
+	"info": {
+		"_postman_id": "55f95dc4-eb5f-44ef-94a9-be3acbffef04",
+		"name": "task_6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27960270"
+	},
+	"item": [
+		{
+			"name": "createPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"First Post\",\r\n    \"description\": \"This is the description of the first post.\",\r\n    \"author\": \"John Doe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "createPost",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"third Post\",\r\n    \"description\": \"This is the description of the first post.\",\r\n    \"author\": \"soulaf3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "141"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8d-4iiSVFLUvwr3fVbvPlIgEtHak5Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Oct 2024 09:45:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6,\n    \"title\": \"third Post\",\n    \"description\": \"This is the description of the first post.\",\n    \"author\": \"soulaf3\",\n    \"date\": \"2024-10-05T09:45:27.864Z\"\n}"
+				},
+				{
+					"name": "createPost",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"third Post\",\r\n    \"description\": \"This is the description of the first post.\",\r\n    \"author\": \"soulaf3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "158"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e-7hCgTJjz6PkfsKLo8fNw27Ls10I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Oct 2024 10:24:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1728123870505,\n    \"title\": \"third Post\",\n    \"description\": \"This is the description of the first post.\",\n    \"author\": \"soulaf3\",\n    \"createdAt\": \"2024-10-05T10:24:30.505Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "readAllPost",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "569"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"239-in4Tt4Ry2ewgXhqwoD2579AtcNQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Oct 2024 09:45:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"title\": \"Second Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf\",\n        \"date\": \"2024-10-05T08:58:47.535Z\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"third Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf3\",\n        \"date\": \"2024-10-05T09:09:01.052Z\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"third Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf3\",\n        \"date\": \"2024-10-05T09:22:13.155Z\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"third Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf3\",\n        \"date\": \"2024-10-05T09:38:42.545Z\"\n    }\n]"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1029"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"405-i693KEDa8nHAhPDx8mNwQjs6fak\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Oct 2024 10:24:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"title\": \"Second Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf\",\n        \"date\": \"2024-10-05T08:58:47.535Z\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"third Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf3\",\n        \"date\": \"2024-10-05T09:09:01.052Z\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"third Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf3\",\n        \"date\": \"2024-10-05T09:22:13.155Z\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"third Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf3\",\n        \"date\": \"2024-10-05T09:38:42.545Z\"\n    },\n    {\n        \"id\": 6,\n        \"title\": \"third Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf3\",\n        \"date\": \"2024-10-05T09:45:27.864Z\"\n    },\n    {\n        \"id\": 1728123863667,\n        \"title\": \"third Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf3\",\n        \"createdAt\": \"2024-10-05T10:24:23.667Z\"\n    },\n    {\n        \"id\": 1728123870505,\n        \"title\": \"third Post\",\n        \"description\": \"This is the description of the first post.\",\n        \"author\": \"soulaf3\",\n        \"createdAt\": \"2024-10-05T10:24:30.505Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "updatePost",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \" Post\",\r\n    \"description\": \"This is the description of the first post update.\",\r\n    \"author\": \"soulaf\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8e-+mKYK7eo5A9VWQD9wdcHIuImahE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Oct 2024 09:44:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"title\": \" Post\",\n    \"description\": \"This is the description of the first post update.\",\n    \"author\": \"soulaf\",\n    \"date\": \"2024-10-05T08:57:11.212Z\"\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \" Post\",\r\n    \"description\": \"This is the description of the first post update.\",\r\n    \"author\": \"soulaf\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/1728123870505",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"1728123870505"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "198"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c6-I1N5LXz8sC3EeoT9J8f2auhd7tE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Oct 2024 10:25:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1728123870505,\n    \"title\": \" Post\",\n    \"description\": \"This is the description of the first post update.\",\n    \"author\": \"soulaf\",\n    \"createdAt\": \"2024-10-05T10:24:30.505Z\",\n    \"updatedAt\": \"2024-10-05T10:25:23.642Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DeletePost",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-/ECDUP+CNYgYGJ9/6aenG4dQQzY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Oct 2024 09:45:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Post not found\"\n}"
+				},
+				{
+					"name": "DeletePost",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/1728123870505",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"1728123870505"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-DL8tGGICEZMKGbak4RMHZ6BNy0o\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Oct 2024 10:25:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post not found\"\n}"
+				}
+			]
+		}
+	]
+}
